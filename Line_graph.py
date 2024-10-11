@@ -1,11 +1,17 @@
 """Import necessary libraries"""
 import numpy as np
 import matplotlib.pyplot as plt
-import unittest
 
 """Create a function to load the csv"""
 def load_data(file_path):
-    return np.loadtxt(file_path, delimiter = ',', skiprows = 1)
+    try:
+        return np.loadtxt(file_path, delimiter=',', skiprows=1)
+    except FileNotFoundError:
+        print(f"Error: The file '{file_path}' was not found.")
+        return None
+    except ValueError as e:
+        print(f"Error: Could not convert data to an array. {e}")
+        return None
 
 """Create a function to split the data into two separate variables"""
 def split_data(data):
