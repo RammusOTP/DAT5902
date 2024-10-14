@@ -1,4 +1,4 @@
-"""return the sum of all multiples of 3 or 5 below given number n"""
+"""Return the sum of all multiples of 3 or 5 below given number n"""
 
 def multiples_sum(n):
     result = 0
