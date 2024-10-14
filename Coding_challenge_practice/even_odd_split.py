@@ -1,3 +1,5 @@
+"""Split a list of numbers into two lists, one for even and one for odd"""
+
 def even_odd_split(numbers):
     l_even = []
     l_odd = []
