@@ -1,3 +1,5 @@
+"""Given a list, output a new list where the next number in the list is the cumulative of the numbers before and including itself"""
+
 def cumulative_sum(numbers):
     cumulative_list = [numbers[0]]
     curr = numbers[0]
